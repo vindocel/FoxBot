@@ -26,6 +26,7 @@ let user = message.mentions.users.first()
      * Aqui, verificaremos o servidor para ver se foram criados tickets adicionais que o bot pode ter perdido devido a
      * travando, reiniciando, etc. Esta parte excluirá TODOS os tickets que seguem o formato de
      * "<username> s-ticket" porque foi assim que codificamos. Você pode modificar isso obviamente.
+     * em breve atualizar as menssagens de canais deletados
      */
     if(message.guild.channels.some(channel => channel.name.toLowerCase() === '🆘┃ticket-' + message.author.id)) {
         message.guild.channels.forEach(channel => {
