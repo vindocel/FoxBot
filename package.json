@@ -1,0 +1,20 @@
+{
+  "name": "FoxBot",
+  "version": "1.5.0",
+  "description": "Fox White® Champions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "VictorMatos",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "enmap": "^5.2.3",
+    "fs": "0.0.1-security",
+    "lowdb": "^1.0.0",
+    "ms": "^2.1.2",
+    "number-to-words": "^1.2.4"
+  }
+}
