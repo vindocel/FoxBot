@@ -22,6 +22,11 @@ module.exports = {
          let tagkaics = client.users.get(`${nomekaics}`).tag
          let avatarkaics = client.users.get(`${nomekaics}`).displayAvatarURL
 
+         //VictorTG
+         let nomevictor = ('400413573496569857')
+         let tagvictor = client.users.get(`${nomevictor}`).tag
+         let avatarvictor = client.users.get(`${nomevictor}`).displayAvatarURL
+
     const serve = client.guilds.get('652586772898775041');
     let cargo1 = ("<@&652592410345472050>") //cargo Mediador
     let cmediacao = ("<#652592431690153984>") //canal 🔄┃mediação
@@ -36,20 +41,48 @@ let tmediadores = new Discord.RichEmbed()
           .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
           .addBlankField()
           .addField("📌Nome e ID de Cada Mediador", `
-**🔹<@${nomekaics}> | ID: ${crase}<@${nomekaics}>${crase}**
+**🔹<@${nomevictor}> | ID: ${crase}${nomevictor}${crase}**
 
-**🔹<@${nomesunshine}> | ID: ${crase}<@${nomesunshine}>${crase}**
+**🔹<@${nomekaics}> | ID: ${crase}${nomekaics}${crase}**
 
-**🔹<@${nomevindocel}> | ID: ${crase}<@${nomevindocel}>${crase}**
+**🔹<@${nomesunshine}> | ID: ${crase}${nomesunshine}${crase}**
+
+**🔹<@${nomevindocel}> | ID: ${crase}${nomevindocel}${crase}**
 `)
           .addBlankField()
-          .addField("📋Ficha Tecnica Individual de Cada Mediador", '**```$m sunshine``` ```$m vindocel``` ```$m kaics```**')
+          .addField("📋Ficha Tecnica Individual de Cada Mediador", '**```$m sunshine``` ```$m vindocel``` ```$m victortg``` ```$m kaics```**')
           .setFooter(`${serve} • © Todos os direitos reservados.`, serve.iconURL)
           .setColor("0x3B88C3")
 
           if(args >= 0 && args <= 0 ) message.channel.send(tmediadores)
 
         //lista com mediadores
+
+        //VICTORTG
+
+let victortg = new Discord.RichEmbed()
+
+          .setTitle(`**<:mediador:654142273470201877> Ficha Técnica do Mediador <:mediador:654142273470201877>**`)
+          .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
+          .setThumbnail(avatarvictor)
+          .addField("Tag do Mediador", `**${tagvictor}**`, true)
+          .addField("ID do Mediador", `**${crase}${nomevictor}${crase}**`, true)
+          .addBlankField(true)
+          .addField("Horario de Atuação", `**13:00h as 18:00h**`, true)
+          .addField("Mais Informações", `**${cmediacao}**`, true)
+          .addBlankField(true)
+          .addField("**<:dinheiro:653477611980193812> Contratar Serviço** / Escolher Troca ou venda", `--------------------------------------------
+<:PayPal:654138849836007449> Pagar com o PayPal [Troca](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K52RAMV7RYCUA) | [Venda](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UV8X8RWBKGQJY)
+
+<:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-64edb267-f69e-48a9-b333-c9fac7b07254) | [Venda](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-1ba4563d-3886-4d44-ba64-2213127087f5)
+--------------------------------------------`)
+          .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
+          .setColor("0x3B88C3")
+
+          if(args[0] == "victortg")
+          message.channel.send(victortg)
+
+        //VICTORTG
 
         //SUNSHINE
 
@@ -59,7 +92,7 @@ let sunshine = new Discord.RichEmbed()
           .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
           .setThumbnail(avatarsunshine)
           .addField("Tag do Mediador", `**${tagsunshine}**`, true)
-          .addField("ID do Mediador", `**${crase}<@${nomesunshine}>${crase}**`, true)
+          .addField("ID do Mediador", `**${crase}${nomesunshine}${crase}**`, true)
           .addBlankField(true)
           .addField("Horario de Atuação", `**19:00h as 22:00h**`, true)
           .addField("Mais Informações", `**${cmediacao}**`, true)
@@ -71,7 +104,7 @@ let sunshine = new Discord.RichEmbed()
 
 <:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/) | [Venda](https://www.mercadopago.com.br/)
 --------------------------------------------`)
-          .setFooter(`${serve} • © Todos os direitos reservados.`, serve.iconURL)
+          .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
           .setColor("0x3B88C3")
 
           if(args[0] == "sunshine")
@@ -87,7 +120,7 @@ let vindocel = new Discord.RichEmbed()
           .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
           .setThumbnail(avatarvindocel)
           .addField("Tag do Mediador", `**${tagvindocel}**`, true)
-          .addField("ID do Mediador", `**${crase}<@${nomevindocel}>${crase}**`, true)
+          .addField("ID do Mediador", `**${crase}${nomevindocel}${crase}**`, true)
           .addBlankField(true)
           .addField("Horario de Atuação", `**Não Definida**`, true)
           .addField("Mais Informações", `**${cmediacao}**`, true)
@@ -99,7 +132,7 @@ let vindocel = new Discord.RichEmbed()
 
 <:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=356850119-074558d3-455e-4043-b180-e05f837fb551) | [Venda](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=356850119-72cd163b-c715-45cc-b3d4-7c18808aaada)
 --------------------------------------------`)
-          .setFooter(`${serve} • © Todos os direitos reservados.`, serve.iconURL)
+          .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
           .setColor("0x3B88C3")
 
           if(args[0] == "vindocel")
@@ -115,7 +148,7 @@ let kaics = new Discord.RichEmbed()
           .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
           .setThumbnail(avatarkaics)
           .addField("Tag do Mediador", `**${tagkaics}**`, true)
-          .addField("ID do Mediador", `**${crase}<@${nomekaics}>${crase}**`, true)
+          .addField("ID do Mediador", `**${crase}${nomekaics}${crase}**`, true)
           .addBlankField(true)
           .addField("Horario de Atuação", `**07:00 as 12:00**`, true)
           .addField("Mais Informações", `**${cmediacao}**`, true)
@@ -123,7 +156,7 @@ let kaics = new Discord.RichEmbed()
           .addField("**<:dinheiro:653477611980193812> Contratar Serviço** / Escolher Troca ou venda", `--------------------------------------------
 <:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=498477624-a691d3f3-6fe1-4f51-8fcd-72340d2c7cfd) | [Venda](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=498477624-5c6822a2-1b99-4a65-bfc8-362f1dc4a5a0)
 --------------------------------------------`)
-          .setFooter(`${serve} • © Todos os direitos reservados.`, serve.iconURL)
+          .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
           .setColor("0x3B88C3")
 
           if(args[0] == "kaics")
