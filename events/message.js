@@ -30,7 +30,7 @@ module.exports = (client, message, dados) => {
     let Aviso = new Discord.RichEmbed()
   
     .setTitle(`**<:firewall:653616767738052627> Mensagem | INDEVIDA <:firewall:653616767738052627>**`)
-    .setDescription(`Usuario tento enviar um convite no canal <#${message.channel.id}>`)
+    .setDescription(`Usuario tentou enviar um convite no canal <#${message.channel.id}>`)
     .setThumbnail(message.author.AvatarURL)
     .addField("**tag**", `${message.author.tag}`, true)
     .addField("**id**", `${crase}<@${message.author.id}>${crase}`, true)
