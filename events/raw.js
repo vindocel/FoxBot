@@ -33,8 +33,8 @@ module.exports = async (client, dados) => {
 
             let canal = dados.d.channel_id
             let valor = dados.d.content.toLowerCase()
-            let venda = valor.search(/((?:troc|trocando|em troc|trocar|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
-            let troca = valor.search(/((?:vend|vendo|vendendo|vendida|apenas ven|to vend|vendo\/troc|vend0|compr))/g)
+            let venda = valor.search(/((?:troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
+            let troca = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|compr))/g)
 
             let bot = String(dados.d.author.bot)
             if(bot == "true") return;
