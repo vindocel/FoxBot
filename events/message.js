@@ -1,6 +1,15 @@
 const Discord = require('discord.js')
 module.exports = (client, message, dados) => {
 
+    //data atual
+    var currentDay = new Date();
+    var currentDD = String(currentDay.getDate()).padStart(2, '0');
+    var currentMM = String(currentDay.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var currentYYYY = currentDay.getFullYear();
+    
+    currentDay = (currentDD + '/' + currentMM + '/' + currentYYYY)
+    //fim data atual
+
   //atualizações do Fortnite
   if(message.channel.id === "671693230781497344"){
     try {
@@ -29,21 +38,10 @@ module.exports = (client, message, dados) => {
   } catch (err) {
     console.log(err.code)
    }
-  }
-  //Fim atualizações do Fortnite
+    //Fim atualizações do Fortnite
 
-  //Loja Fortnite
-
-  //data atual
-  var currentDay = new Date();
-  var currentDD = String(currentDay.getDate()).padStart(2, '0');
-  var currentMM = String(currentDay.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var currentYYYY = currentDay.getFullYear();
-  
-  currentDay = (currentDD + '/' + currentMM + '/' + currentYYYY)
-  //fim data atual
-
-  if(message.channel.id === "682447151544139784"){
+    //Loja Fortnite
+  } else if(message.channel.id === "682447151544139784"){
     try {
     const msgImagemLoja = (message.attachments)
     let msgCruaLoja = message.content.split('',950).join('')
@@ -51,7 +49,7 @@ module.exports = (client, message, dados) => {
     let msgContentLoja = excluirLinkLoja.replace(/@everyone/gi, '')
     if(typeof msgImagemLoja.array()[0] !== "undefined") {
         let embedLoja = new Discord.RichEmbed()
-               .setTitle(`💡 ${currentDay}`)
+               .setTitle(`<:vbucks:683092620515475517> Loja do dia ${currentDay}`)
                .setImage(msgImagemLoja.array()[0].url)
                .setColor('0x39b9fa')
                .setFooter(`${client.guilds.get('652586772898775041')}`)
