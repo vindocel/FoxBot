@@ -16,7 +16,7 @@ module.exports = {
             .setTitle('<:Terminal:654661251753836546> **Comandos  Help!**')
             .setDescription('**Para detalhes sobre os Comandos abaixo use `$help <comando>`**')
             .addField('<:msg:653478742072754177> **Comandos:**', `
-🟡 ${crase}$anunciar${crase} **Comando Exclusivo para usuarios SVip+**
+🟡 ${crase}$anunciar${crase} **Comando Exclusivo para usuarios Vip**
 
 🟢 ${crase}$regras${crase} **Comando para todos os usuarios**
 
