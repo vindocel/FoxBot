@@ -74,6 +74,7 @@ ${crases} ${crases}`)
     //Fim do codigo referente ao Loja | 1 mes | 2 mes | 3 Mes | --------------------------
 
     //anuncio com declaração de quem comprou a loja
+    let crasestri = ('`')
 
     let lojavip1 = new Discord.RichEmbed()
 
@@ -81,9 +82,9 @@ ${crases} ${crases}`)
     .setThumbnail(message.mentions.users.first().displayAvatarURL)
     .addField(`<:dinheiro:653477611980193812> **Comprador**`, `${message.mentions.users.first()}`, true)
     .addField('<:tempo:653688714840506378> **Tempo**', `----1 Mês----`, true)
-    .addField('🔷 **Plano Vip** ', `Agora o ${message.mentions.users.first().tag} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#631633387374903327>`)
+    .addField('🔷 **Plano Vip** ', `Agora o ${crasestri}${message.mentions.users.first().tag}${crasestri} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#652592442494812171>`)
     .setColor('0x3B88C3')
-    if(args[1] == "1mes")
+    if(args[0] == "1mes")
     return message.channel.send(lojavip1)
 
     let lojavip2 = new Discord.RichEmbed()
@@ -92,9 +93,9 @@ ${crases} ${crases}`)
     .setThumbnail(message.mentions.users.first().displayAvatarURL)
     .addField(`<:dinheiro:653477611980193812> **Comprador**`, `${message.mentions.users.first()}`, true)
     .addField('<:tempo:653688714840506378> **Tempo**', `---2 Mêses---`, true)
-    .addField('🔷 **Plano Vip** ', `Agora o ${message.mentions.users.first().tag} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#631633387374903327>`)
+    .addField('🔷 **Plano Vip** ', `Agora o ${crasestri}${message.mentions.users.first().tag}${crasestri} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#652592442494812171>`)
     .setColor('0x3B88C3')
-    if(args[1] == "2meses")
+    if(args[0] == "2meses")
     return message.channel.send(lojavip2)
 
     let lojavip3 = new Discord.RichEmbed()
@@ -103,9 +104,9 @@ ${crases} ${crases}`)
     .setThumbnail(message.mentions.users.first().displayAvatarURL)
     .addField(`<:dinheiro:653477611980193812> **Comprador**`, `${message.mentions.users.first()}`, true)
     .addField('<:tempo:653688714840506378> **Tempo**', `---3 Mêses---`, true)
-    .addField('🔷 **Plano Vip** ', `Agora o ${message.mentions.users.first().tag} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#631633387374903327>`)
+    .addField('🔷 **Plano Vip** ', `Agora o ${crasestri}${message.mentions.users.first().tag}${crasestri} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#652592442494812171>`)
     .setColor('0x3B88C3')
-    if(args[1] == "3meses")
+    if(args[0] == "3meses")
     return message.channel.send(lojavip3)
 
 }
