@@ -48,7 +48,7 @@ ${crases} ${crases}`)
 
     //Paypal
     let pEmbedp1 = new Discord.RichEmbed()
-    .setDescription(`<:PayPal:654138849836007449> | Pagar com PayPal: [1 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WN3RMMS5YJDXC) | [2 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRZAZWU53M6Y6) | [3 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4GLJ5HX62FYFQ)`)
+    .setDescription(`<:PayPal:654138849836007449> | Pagar com PayPal: [1 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2MCAD9BE72F48) | [2 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V524DT5RFJWVL) | [3 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3ULCMZ63EKPUJ)`)
     .setColor("0x009BDD")
     
     if(args >= 0 && args <= 0 ) message.channel.send(pEmbedp1)
@@ -56,7 +56,7 @@ ${crases} ${crases}`)
     //Picpay
     let pEmbedp2 = new Discord.RichEmbed()
 
-    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://app.picpay.com/user/VindoCel/20.0) | [2 Mês](https://app.picpay.com/user/VindoCel/30.0) | [3 Mês](https://app.picpay.com/user/VindoCel/35.0)`)
+    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://picpay.me/victor.tuma.garcia/20.0) | [2 Mês](https://picpay.me/victor.tuma.garcia/30.0) | [3 Mês](https://picpay.me/victor.tuma.garcia/35.0)`)
     .setColor("0x2FAC61")
 
     if(args >= 0 && args <= 0 ) message.channel.send(pEmbedp2)
@@ -64,7 +64,7 @@ ${crases} ${crases}`)
     //Mercadopago
     let pEmbedp3 = new Discord.RichEmbed()
 
-    .setDescription(`<:MPago:654138849550925864> | Pagar com MPago: [1 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=356850119-3fff51c7-453a-41c8-964c-5aa9a103d274) | [2 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=356850119-6c5ad300-24ba-4a03-9642-dc6c5a4e7194) | [3 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=356850119-81042f74-64a0-4385-accf-d55a339b38b4)`)
+    .setDescription(`<:MPago:654138849550925864> | Pagar com MPago: [1 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-039eb6cd-2179-4b79-8001-566aff177172) | [2 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-482c4174-92ee-4d6e-8871-afca39b3122d) | [3 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-013451da-2999-4455-b32d-ccdef9260c1c)`)
     .setColor("0x4564A3")
 
    
