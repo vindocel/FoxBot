@@ -11,6 +11,7 @@ module.exports = {
         message.delete()
 
 //boloquio por cargo
+
 if(!message.member.roles.some(r=>["652592408550178827", "652592409582239744", "652592410345472050", "652592411003846697"].includes(r.id)))
         return message.reply(`<:stop:653479507650674729> Você Não tem Permissao para Usar este Comando, <:cancelar:653462167076470785>`);
     

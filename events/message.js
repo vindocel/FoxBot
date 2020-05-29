@@ -92,6 +92,14 @@ module.exports = (client, message, dados) => {
         client.channels.get('653608128646217752').send(Aviso)
       }
     //comando apagar convites de servidor
+
+    if(message.guild.id != '652586772898775041') {
+      return message.delete(),
+      message.reply(`<:stop:653479507650674729> Esse comando não pode ser usado Fora da **FoxWhite** <:cancelar:653462167076470785>`).then(d_msg => { d_msg.delete(9000);});
+      
+    }
+        
+
   if (message.content.indexOf(client.config.prefix) !== 0) return;
 
   const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
