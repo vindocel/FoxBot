@@ -56,7 +56,7 @@ ${crases} ${crases}`)
     //Picpay
     let pEmbedp2 = new Discord.RichEmbed()
 
-    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://picpay.me/victor.tuma.garcia/20.0) | [2 Mês](https://picpay.me/victor.tuma.garcia/30.0) | [3 Mês](https://picpay.me/victor.tuma.garcia/35.0)`)
+    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://picpay.me/victor.tuma.garcia1/20.0) | [2 Mês](https://picpay.me/victor.tuma.garcia1/30.0) | [3 Mês](https://picpay.me/victor.tuma.garcia1/35.0)`)
     .setColor("0x2FAC61")
 
     if(args >= 0 && args <= 0 ) message.channel.send(pEmbedp2)
