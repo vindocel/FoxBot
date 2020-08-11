@@ -3,7 +3,7 @@ module.exports = {
         name: "m",
         aliases: [],
         category: "usuario",
-        description: "Usado para mostrar lista com nome dos medidores e suas fixas tecnicas",
+        description: "Usado para mostrar lista com nome dos mediadores e suas fichas tecnicas",
         usage: `$m ou $m <nome mediador>`,
         run: async (client, message, args) => {
 
