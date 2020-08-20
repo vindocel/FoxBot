@@ -43,7 +43,7 @@ let tmediadores = new Discord.RichEmbed()
 **🔹<@${nomevindocel}> | ID: ${crase}${nomevindocel}${crase}**
 `)
           .addBlankField()
-          .addField("📋Ficha Tecnica Individual de Cada Mediador", '**```$m sunshine``` ```$m vindocel``` ```$m victortg``` ```$m kaics```**')
+          .addField("📋Ficha Tecnica Individual de Cada Mediador", '**```$m vindocel``` ```$m victortg``` ```$m kaics```**')
           .setFooter(`${serve} • © Todos os direitos reservados.`, serve.iconURL)
           .setColor("0x3B88C3")
 
