@@ -7,11 +7,6 @@ module.exports = {
         usage: `$m ou $m <nome mediador>`,
         run: async (client, message, args) => {
 
-        //sunshine
-        let nomesunshine = ('631601995941281793')
-        let tagsunshine = client.users.get(`${nomesunshine}`).tag
-        let avatarsunshine = client.users.get(`${nomesunshine}`).displayAvatarURL
-
         //vindocel
         let nomevindocel = ('563223113039609856')
         let tagvindocel = client.users.get(`${nomevindocel}`).tag
@@ -44,8 +39,6 @@ let tmediadores = new Discord.RichEmbed()
 **🔹<@${nomevictor}> | ID: ${crase}${nomevictor}${crase}**
 
 **🔹<@${nomekaics}> | ID: ${crase}${nomekaics}${crase}**
-
-**🔹<@${nomesunshine}> | ID: ${crase}${nomesunshine}${crase}**
 
 **🔹<@${nomevindocel}> | ID: ${crase}${nomevindocel}${crase}**
 `)
@@ -80,31 +73,6 @@ let victortg = new Discord.RichEmbed()
           message.channel.send(victortg)
 
         //VICTORTG
-
-        //SUNSHINE
-
-let sunshine = new Discord.RichEmbed()
-
-          .setTitle(`**<:mediador:654142273470201877> Ficha Técnica do Mediador <:mediador:654142273470201877>**`)
-          .setDescription(`**Horario de atuação do mediador é das ${crase}19:00h as 22:00h${crase}**`)
-          .setThumbnail(avatarsunshine)
-          .addField("Tag do Mediador", `**${crase}${tagsunshine}${crase}**`, true)
-          .addField("ID do Mediador", `**${crase}${nomesunshine}${crase}**`, true)
-          .addField("**<:dinheiro:653477611980193812> Contratar Serviço** / Escolher Troca ou venda", `--------------------------------------------
-<:PayPal:654138849836007449> Pagar com o PayPal [Troca](https://www.paypal.com/) | [Venda](https://www.paypal.com/)
-
-<:PicPay:654138850301575168> Pagar com o PicPay [Troca](https://picpay.com/site) | [Venda](https://picpay.com/site)
-
-<:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/) | [Venda](https://www.mercadopago.com.br/)
---------------------------------------------`)
-          .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
-          .setColor("0x3B88C3")
-          .setTimestamp()
-
-          if(args[0] == "sunshine")
-          message.channel.send(sunshine)
-
-        //SUNSHINE
 
         //VINDOCEL
 
