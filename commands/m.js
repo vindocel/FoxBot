@@ -63,6 +63,8 @@ let victortg = new Discord.RichEmbed()
           .addField("**<:dinheiro:653477611980193812> Contratar Serviço** / Escolher Troca ou venda", `--------------------------------------------
 <:PayPal:654138849836007449> Pagar com o PayPal [Troca](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K52RAMV7RYCUA) | [Venda](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UV8X8RWBKGQJY)
 
+<:PicPay:654138850301575168> Pagar com o PicPay [Troca](https://picpay.me/victor.tuma.garcia1/21.0) | [Venda](https://picpay.me/victor.tuma.garcia1/18.0)
+
 <:MPago:654138849550925864> Pagar com o MPago [Troca](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-64edb267-f69e-48a9-b333-c9fac7b07254) | [Venda](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-1ba4563d-3886-4d44-ba64-2213127087f5)
 --------------------------------------------`)
           .setFooter(`Solicitado por ${message.author.username}`, message.author.displayAvatarURL)
