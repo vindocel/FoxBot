@@ -3,7 +3,7 @@ module.exports = {
         name: "m",
         aliases: [],
         category: "usuario",
-        description: "Usado para mostrar lista com nome dos mediadores e suas fichas tecnicas",
+        description: "Usado para mostrar a lista com o nome dos mediadores e suas fichas técnicas",
         usage: `$m ou $m <nome mediador>`,
         run: async (client, message, args) => {
 
@@ -33,7 +33,7 @@ module.exports = {
 let tmediadores = new Discord.RichEmbed()
 
           .setTitle(':regional_indicator_m::regional_indicator_e::regional_indicator_d::regional_indicator_i::regional_indicator_a::regional_indicator_d::regional_indicator_o::regional_indicator_r::regional_indicator_e::regional_indicator_s:')
-          .setDescription(`Todos Mediadores Registrados Possui o Cargo :arrow_right: **${cargo1}**`)
+          .setDescription(`Todos os mediadores registrados possuem o cargo :arrow_right: **${cargo1}**`)
           .addBlankField()
           .addField("📌Nome e ID de Cada Mediador", `
 **🔹<@${nomevictor}> | ID: ${crase}${nomevictor}${crase}**
@@ -56,7 +56,7 @@ let tmediadores = new Discord.RichEmbed()
 let victortg = new Discord.RichEmbed()
 
           .setTitle(`**<:mediador:654142273470201877> Ficha Técnica do Mediador <:mediador:654142273470201877>**`)
-          .setDescription(`**Horario de atuação do mediador é das ${crase}13:00h as 18:00h${crase}**`)
+          .setDescription(`**Horário de atuação deste mediador é das ${crase}13:00h às 18:00h${crase}**`)
           .setThumbnail(avatarvictor)
           .addField("Tag do Mediador", `**${crase}${tagvictor}${crase}**`, true)
           .addField("ID do Mediador", `**${crase}${nomevictor}${crase}**`, true)
@@ -79,7 +79,7 @@ let victortg = new Discord.RichEmbed()
 let vindocel = new Discord.RichEmbed()
 
           .setTitle(`**<:mediador:654142273470201877> Ficha Técnica do Mediador <:mediador:654142273470201877>**`)
-          .setDescription(`**Esse Mediador não possui Horario de mediação Definida**`)
+          .setDescription(`**Este mediador não possui horário de mediação definida**`)
           .setThumbnail(avatarvindocel)
           .addField("Tag do Mediador", `**${crase}${tagvindocel}${crase}**`, true)
           .addField("ID do Mediador", `**${crase}${nomevindocel}${crase}**`, true)
@@ -104,7 +104,7 @@ let vindocel = new Discord.RichEmbed()
 let kaics = new Discord.RichEmbed()
 
           .setTitle(`**<:mediador:654142273470201877> Ficha Técnica do Mediador <:mediador:654142273470201877>**`)
-          .setDescription(`**Horario de atuação do mediador é das ${crase}07:00h as 12:30h${crase}**`)
+          .setDescription(`**Horário de atuação deste mediador é das ${crase}07:00h às 13:00h${crase}**`)
           .setThumbnail(avatarkaics)
           .addField("Tag do Mediador", `**${crase}${tagkaics}${crase}**`, true)
           .addField("ID do Mediador", `**${crase}${nomekaics}${crase}**`, true)
