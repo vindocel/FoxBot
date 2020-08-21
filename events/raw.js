@@ -27,7 +27,7 @@ module.exports = async (client, dados) => {
 //Fim
 
 //codigo fitrar menssagens
-          //filtro de vendas e troca
+          //filtro de vendas, compras e trocas
           if(dados.t == 'MESSAGE_CREATE' && client.guilds.get("652586772898775041").members.get(dados.d.author.id)){ // ID do Serve
             let membro = client.guilds.get("652586772898775041").members.get(dados.d.author.id) // ID do Serve
 
@@ -35,22 +35,29 @@ module.exports = async (client, dados) => {
             let valor = dados.d.content.toLowerCase()
             let venda = valor.search(/((?:troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
             let troca = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|compro))/g)
-
+            let compra = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
+            
             let bot = String(dados.d.author.bot)
             if(bot == "true") return;
 
             if(venda>=0 && canal == "652592438602366986") { //id canal de vendas
                 client.channels.get(canal).bulkDelete(1)
-                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `venda de contas`<:dinheiro:653477611980193812> se o seu desejo é <:mediador:654142273470201877>`trocar` de conta entre aqui <#652592440905039913> <a:sino:654177101322256395>')
-            }
-
-
-            if(troca>=0 && canal == "652592440905039913") { //id canal de trocas
-                client.channels.get(canal).bulkDelete(1)
-                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `troca de contas`<:mediador:654142273470201877> se o seu desejo é <:dinheiro:653477611980193812>`vender` uma conta entre aqui <#652592438602366986> <a:sino:654177101322256395>')
+                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `venda de contas`<:dinheiro:653477611980193812> se o seu desejo é <:mediador:654142273470201877>`trocar ou comprar` uma conta entre aqui <#652592440905039913> ou aqui <#746394000726163537> <a:sino:654177101322256395>')
             }
             
 
+            if(troca>=0 && canal == "652592440905039913") { //id canal de trocas
+                client.channels.get(canal).bulkDelete(1)
+                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `troca de contas`<:mediador:654142273470201877> se o seu desejo é <:dinheiro:653477611980193812>`vender ou comprar` uma conta entre aqui <#652592438602366986> para vender ou aqui <#746394000726163537> para comprar <a:sino:654177101322256395>')
+            }
+              
+              
+            if(compra>=0 && canal == "746394000726163537") { //id canal de compras
+                client.channels.get(canal).bulkDelete(1)
+                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `procura de produtos`<:mediador:654142273470201877> se o seu desejo é <:dinheiro:653477611980193812>`vender ou trocar` uma conta entre aqui <#652592438602366986> para vender ou aqui <#652592440905039913> para trocar <a:sino:654177101322256395>')
+            }
+              
+              
             if (dados.d.channel_id === "652592451558834188"){ 
                 
                 client.channels.get('652592451558834188').fetchMessage(dados.d.id).then(m => m.react('653462167139385374'))
