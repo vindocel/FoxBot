@@ -48,7 +48,7 @@ ${crases} ${crases}`)
 
     //Paypal
     let pEmbedp1 = new Discord.RichEmbed()
-    .setDescription(`<:PayPal:654138849836007449> | Pagar com PayPal: [1 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2MCAD9BE72F48) | [2 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V524DT5RFJWVL) | [3 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3ULCMZ63EKPUJ)`)
+    .setDescription(`<:PayPal:654138849836007449> | Pagar com PayPal: [1 Mês](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2MCAD9BE72F48) | [2 Meses](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V524DT5RFJWVL) | [3 Meses](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3ULCMZ63EKPUJ)`)
     .setColor("0x009BDD")
     
     if(args >= 0 && args <= 0 ) message.channel.send(pEmbedp1)
@@ -56,7 +56,7 @@ ${crases} ${crases}`)
     //Picpay
     let pEmbedp2 = new Discord.RichEmbed()
 
-    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://picpay.me/victor.tuma.garcia1/20.0) | [2 Mês](https://picpay.me/victor.tuma.garcia1/30.0) | [3 Mês](https://picpay.me/victor.tuma.garcia1/35.0)`)
+    .setDescription(`<:PicPay:654138850301575168> | Pagar com PicPay: [1 Mês](https://picpay.me/victor.tuma.garcia1/20.0) | [2 Meses](https://picpay.me/victor.tuma.garcia1/30.0) | [3 Meses](https://picpay.me/victor.tuma.garcia1/35.0)`)
     .setColor("0x2FAC61")
 
     if(args >= 0 && args <= 0 ) message.channel.send(pEmbedp2)
@@ -71,7 +71,7 @@ ${crases} ${crases}`)
     if(args >= 0 && args <= 0 )
     return message.channel.send(pEmbedp3)
 
-    //Fim do codigo referente ao Loja | 1 mes | 2 mes | 3 Mes | --------------------------
+    //Fim do codigo referente ao Loja | 1 mês | 2 meses | 3 meses | --------------------------
 
     //anuncio com declaração de quem comprou a loja
     let crasestri = ('`')
@@ -92,7 +92,7 @@ ${crases} ${crases}`)
     .setTitle(`🔹 LojaVip 🔹`)
     .setThumbnail(message.mentions.users.first().displayAvatarURL)
     .addField(`<:dinheiro:653477611980193812> **Comprador**`, `${message.mentions.users.first()}`, true)
-    .addField('<:tempo:653688714840506378> **Tempo**', `---2 Mêses---`, true)
+    .addField('<:tempo:653688714840506378> **Tempo**', `---2 Meses---`, true)
     .addField('🔷 **Plano Vip** ', `Agora o ${crasestri}${message.mentions.users.first().tag}${crasestri} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#652592442494812171>`)
     .setColor('0x3B88C3')
     if(args[0] == "2meses")
@@ -103,7 +103,7 @@ ${crases} ${crases}`)
     .setTitle(`🔹 LojaVip 🔹`)
     .setThumbnail(message.mentions.users.first().displayAvatarURL)
     .addField(`<:dinheiro:653477611980193812> **Comprador**`, `${message.mentions.users.first()}`, true)
-    .addField('<:tempo:653688714840506378> **Tempo**', `---3 Mêses---`, true)
+    .addField('<:tempo:653688714840506378> **Tempo**', `---3 Meses---`, true)
     .addField('🔷 **Plano Vip** ', `Agora o ${crasestri}${message.mentions.users.first().tag}${crasestri} ira ter uma loja exclusiva só para ele, caso voce também queira uma comprar uma loja exclusiva para voce acesse <#652592442494812171>`)
     .setColor('0x3B88C3')
     if(args[0] == "3meses")
