@@ -18,11 +18,11 @@ ${crases}
 ${crases}asciidoc
 = Planos =
 ${crases}
-> **${assimples}1 Mês${assimples} de loja VIP : ${assimples}20 R$${assimples}<:dinheiro:653477611980193812>**
+> **${assimples}1 mês${assimples} de loja VIP : ${assimples}20 R$${assimples}<:dinheiro:653477611980193812>**
     
-> **${assimples}2 Meses${assimples} de loja VIP : ${assimples}30 R$${assimples}<:dinheiro:653477611980193812>**
+> **${assimples}2 meses${assimples} de loja VIP : ${assimples}30 R$${assimples}<:dinheiro:653477611980193812>**
     
-> **${assimples}3 Meses${assimples} de loja VIP : ${assimples}35 R$${assimples}<:dinheiro:653477611980193812>**
+> **${assimples}3 meses${assimples} de loja VIP : ${assimples}35 R$${assimples}<:dinheiro:653477611980193812>**
 ${crases}asciidoc
 = Benefícios =
 ${crases}
@@ -32,9 +32,9 @@ ${crases}
 
 > <:verificadob:654665910384066560> **Pode anunciar seus ${assimples}Bundles${assimples} em sua loja exclusiva**
     
-> <:verificadob:654665910384066560> **Uma tag Exclusiva para quem é VIP <@&654667200124289034> **
+> <:verificadob:654665910384066560> **Uma tag exclusiva para quem é VIP <@&654667200124289034> **
 
-> <:verificadob:654665910384066560> **Ganha Permição para usar o Comando ${assimples}$anunciar${assimples} Qual pode anunciar 2 veses ao dia e 3 canais de uma só vez**
+> <:verificadob:654665910384066560> **Ganha permissão para usar o comando ${assimples}$anunciar${assimples} podendo usar 1 VEZ ao dia**
 ${crases} ${crases}`)
 
     //titulo------------------------------------------------------------------------------
