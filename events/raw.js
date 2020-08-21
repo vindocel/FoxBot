@@ -36,6 +36,7 @@ module.exports = async (client, dados) => {
             let venda = valor.search(/((?:troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
             let troca = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|compro))/g)
             let compra = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
+            let sugestão = valor.search(/((?:de graça|graça|metade do preço|grátis|gratis|gratuito|benefícios para))/g)
             
             let bot = String(dados.d.author.bot)
             if(bot == "true") return;
@@ -55,6 +56,12 @@ module.exports = async (client, dados) => {
             if(compra>=0 && canal == "746394000726163537") { //id canal de compras
                 client.channels.get(canal).bulkDelete(1)
                 client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Esse é um canal dedicado a `procura de produtos`<:mediador:654142273470201877> se o seu desejo é <:dinheiro:653477611980193812>`vender ou trocar` uma conta entre aqui <#652592438602366986> para vender ou aqui <#652592440905039913> para trocar <a:sino:654177101322256395>')
+            }
+              
+              
+            if(sugestão>=0 && canal == "652592451558834188") { //id canal de sugestões
+                client.channels.get(canal).bulkDelete(1)
+                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Não vai rolar :(, sentimos muito <a:sino:654177101322256395>')
             }
               
               
