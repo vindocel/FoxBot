@@ -57,8 +57,6 @@ module.exports = {
 
 
 
-    client.channels.get('653423495694254080').send(anuncioc)
-
     client.channels.get('652592438602366986').send('@everyone', anuncioc)
 
     client.channels.get('652592440905039913').send(anuncioc)
