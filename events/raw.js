@@ -61,7 +61,7 @@ module.exports = async (client, dados) => {
               
             if(sugestão>=0 && canal == "652592451558834188") { //id canal de sugestões
                 client.channels.get(canal).bulkDelete(1)
-                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+', Não vai rolar :(, sentimos muito <a:sino:654177101322256395>')
+                client.channels.get(canal).send('<:stop:653479507650674729> '+membro+' Não vai rolar, sentimos muito. <a:sino:654177101322256395>')
             }
               
               
