@@ -1,10 +1,7 @@
 const Discord = require("discord.js");
 module.exports = {
     name: "lojavip",
-    aliases: [],
-    category: "moderaçao",
-    description: "mensagem lojavip",
-    usage: `$lojavip`,
+    description: "comando lojavip",
     run: async (client, message, args) => {
 
     if (message.channel.type === "dm") return;
