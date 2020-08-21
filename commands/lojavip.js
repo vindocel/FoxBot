@@ -67,7 +67,7 @@ ${crases} ${crases}`)
     //Mercadopago
     let pEmbedp3 = new Discord.RichEmbed()
 
-    .setDescription(`<:MPago:654138849550925864> | Pagar com MPago: [1 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-039eb6cd-2179-4b79-8001-566aff177172) | [2 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-482c4174-92ee-4d6e-8871-afca39b3122d) | [3 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-013451da-2999-4455-b32d-ccdef9260c1c)`)
+    .setDescription(`<:MPago:654138849550925864> | Pagar com MPago: [1 Mês](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-039eb6cd-2179-4b79-8001-566aff177172) | [2 Meses](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-482c4174-92ee-4d6e-8871-afca39b3122d) | [3 Meses](https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=195372461-013451da-2999-4455-b32d-ccdef9260c1c)`)
     .setColor("0x4564A3")
 
    
