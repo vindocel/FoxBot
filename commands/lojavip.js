@@ -71,6 +71,33 @@ ${crases} ${crases}`)
     if(args >= 0 && args <= 0 )
     return message.channel.send(pEmbedp3)
 
+    return message.channel.send(`> **<:platina:653478742118629376>\/\/\/\/\/\/\/<:platina:653478742118629376>LojaVip<:platina:653478742118629376>\/\/\/\/\/\/\/<:platina:653478742118629376>**
+${crases}asciidoc
+= Formas de Pagamento =
+${crases}
+> <:PayPal:654138849836007449>** | PayPal > <:PicPay:654138850301575168> | PicPay > <:MPago:654138849550925864> | Mercado Pago**
+${crases}asciidoc
+= Planos =
+${crases}
+> **${assimples}1 mês${assimples} de loja VIP : ${assimples}20 R$${assimples}<:dinheiro:653477611980193812>**
+    
+> **${assimples}2 meses${assimples} de loja VIP : ${assimples}30 R$${assimples}<:dinheiro:653477611980193812>**
+    
+> **${assimples}3 meses${assimples} de loja VIP : ${assimples}35 R$${assimples}<:dinheiro:653477611980193812>**
+${crases}asciidoc
+= Benefícios =
+${crases}
+> <:verificadob:654665910384066560> **Uma loja totalmente exclusiva**
+    
+> <:verificadob:654665910384066560> **Poder dar ${assimples}@everyone${assimples} uma vez por dia em sua loja exclusiva**
+
+> <:verificadob:654665910384066560> **Pode anunciar seus ${assimples}Bundles${assimples} em sua loja exclusiva**
+    
+> <:verificadob:654665910384066560> **Uma tag exclusiva para quem é VIP <@&654667200124289034> **
+
+> <:verificadob:654665910384066560> **Ganha permissão para usar o comando ${assimples}$anunciar${assimples} podendo usar 1 VEZ ao dia**
+${crases} ${crases}`)
+
     //Fim do codigo referente ao Loja | 1 mês | 2 meses | 3 meses | --------------------------
 
     //anuncio com declaração de quem comprou a loja
