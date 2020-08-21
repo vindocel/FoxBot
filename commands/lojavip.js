@@ -30,7 +30,7 @@ ${crases}
     
 > <:verificadob:654665910384066560> **Poder dar ${assimples}@everyone${assimples} uma vez por dia em sua loja exclusiva**
 
-> <:verificadob:654665910384066560> **Pode anunciar seus ${assimples}Bundles${assimples} em sua loja exclusiva**
+> <:verificadob:654665910384066560> **Poder anunciar seus ${assimples}Bundles${assimples} em sua loja exclusiva**
     
 > <:verificadob:654665910384066560> **Uma tag exclusiva para quem é VIP <@&654667200124289034> **
 
