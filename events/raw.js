@@ -34,7 +34,7 @@ module.exports = async (client, dados) => {
             let canal = dados.d.channel_id
             let valor = dados.d.content.toLowerCase()
             let venda = valor.search(/((?:troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0|compro|compr0))/g)
-            let troca = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|compro))/g)
+            let troca = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|compro|compr0))/g)
             let compra = valor.search(/((?:vend|vendo|vendendo|vendida|ven--do|apenas ven|to vend|vendo\/troc|vend0|troc|trocando|em troc|trocar|tro--co|troca|to troc|apenas troc|vendo\/troc|troc0))/g)
             let sugestão = valor.search(/((?:de graça|graça|metade do preço|grátis|gratis|gratuito|benefícios para))/g)
             
